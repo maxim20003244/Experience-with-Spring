@@ -61,7 +61,10 @@
       <property name="volume" value="${musicPlayer.volume}"/>
    </bean>-->
     <bean id="classical"
-          class="ru.springScopeBean.ClassicalMusic">
+          class="ru.springScopeBean.ClassicalMusic" scope="prototype"
+    init-method="doInitMethod"
+    destroy-method="destroyMyMethod"
+    factory-method="getClassicalMusic">
 
     </bean>
 

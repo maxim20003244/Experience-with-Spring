@@ -12,6 +12,7 @@ public class MusicPlayer {
         this.music = music;
     }
 
+
     public Music getMusic() {
         return music;
     }
